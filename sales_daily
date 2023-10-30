@@ -1,0 +1,5 @@
+select date_date
+, round(sum(turnover),2) as total_turnover
+, round (sum(purchase_cost),2) as total_purchase_cost
+from `data-analytics-bootcamp-363212.course14.gwz_sales`
+group by date_date
